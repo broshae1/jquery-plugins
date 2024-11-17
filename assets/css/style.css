@@ -113,39 +113,4 @@ nav {
     object-fit: cover;
   }
 
-#mobile-menu-icon {
-    width: 30px;
-}
 
-/* mobile styles */
-
-@media (max-width: 800px) {
-    #mobile-menu-button {
-        display: block;
-    }
-
-    #main-menu {
-      margin-top: 20px;
-      width: 100%;
-      flex-direction: column;
-      
-      
-        
-    }
-
-    .dropdown-menu {
-        position: relative;
-        display: block;
-    }
-
-    #main-menu > li {
-        border-top: 2px solid linen;
-        padding-top: 30px;
-    }
-
-    /* we will toggle this class with js. 
-    putting it in a media query ensures it will only apply on a mobile */
-   .display-none-mobile {
-        display: none;
-    }
-}
