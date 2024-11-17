@@ -32,10 +32,10 @@ $("#mobile-menu-button").click(function(){
     }
 });
 
-$("a[data-bakery-image]").click(function(){
- let image = $(this).children("img").attr("src");
- $("#overlay-image").attr("src", image);
-});
+// $("a[data-bakery-image]").click(function(){
+//  let image = $(this).children("img").attr("src");
+//  $("#overlay-image").attr("src", image);
+// });
 
 new Splide( '.splide', {
     type   : 'loop',

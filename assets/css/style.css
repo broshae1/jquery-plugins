@@ -94,12 +94,13 @@ nav {
 
 }
 
-#bakery-overlay img {
- width: 100%;
+.modal img {
+ height: 90vh;
 }
 
 .modal {
     max-width: 100% !important;
+    width: auto !important;
 }
 
 .splide  {
