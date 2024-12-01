@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bakery</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <nav>
@@ -35,14 +37,24 @@
         </menu>
       
     </nav>
+    <section id="welcome"> 
+        <h1 data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000">Welcome to our Bakery</h1>
+        <img data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" src="assets/images/cake1.jpg">
+  </section>
 
-    <section id="bakery">
+
+
+    <section id="featured">
+
+  
+
+        <h2 data-aos="fade-in">Featured Cakes</h2>
      
-        <div class="bakery-flex-container">
-            <a  href="#bakery-overlay1" rel="modal:open"><img src="assets/images/cake1.jpg"></a>
-            <a  href="#bakery-overlay2" rel="modal:open"><img src="assets/images/cake2.jpg"></a>
-            <a href="#bakery-overlay3" rel="modal:open"><img src="assets/images/cake3.jpg"></a>
-            <a href="#bakery-overlay4" rel="modal:open"><img src="assets/images/cake4.jpg"></a>
+        <div data-aos="fade-up" class="bakery-flex-container">
+            <a href="#bakery-overlay1" id="open-modal" rel="modal:open"><img src="assets/images/cake1.jpg"></a>
+            <a href="#bakery-overlay2" class="open-modal" rel="modal:open"><img src="assets/images/cake2.jpg"></a>
+            <a href="#bakery-overlay3" class="open-modal" rel="modal:open"><img src="assets/images/cake3.jpg"></a>
+            <a href="#bakery-overlay4" class="open-modal" rel="modal:open"><img src="assets/images/cake4.jpg"></a>
         </div>
         <div id="bakery-overlay1" class="modal">
             <img id="overlay-image" src="assets/images/cake1.jpg">
@@ -65,7 +77,9 @@
           </div>
     </section>
 
-    <section class="splide" aria-label="Splide Basic HTML Example">
+    <section data-aos="fade-in" id="gallery">
+<h2>Gallery of cakes</h2>
+    <section data-aos="fade-up" class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide"><img src="assets/images/cake1.jpg"></li>
@@ -75,6 +89,8 @@
               </ul>
         </div>
       </section>
+
+    </section>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -89,6 +105,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 <link href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
+<!-- Animate on Scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <!-- my script -->
 <script src="assets/js/script.js"></script>
 </body>
