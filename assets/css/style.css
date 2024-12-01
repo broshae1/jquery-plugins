@@ -1,0 +1,58 @@
+body {
+    background-color: lightpink;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2 {
+    color:mediumvioletred;
+    text-align: center;
+}
+
+nav {
+     background-color: mediumvioletred;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding-block: 20px;
+}
+
+menu {
+    display: flex;
+    gap: 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+menu li a {
+    font-size: 20px;
+    color: lightpink;
+    text-decoration: none;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 100px;
+}
+
+#welcome img {
+    width: 50%;
+    height: 700px;
+    object-fit: cover;
+}
+
+#featured {
+    background-color: antiquewhite;
+    padding-block: 200px;
+}
